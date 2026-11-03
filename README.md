@@ -42,3 +42,7 @@ git pull origin main       # 拉取远程更新
 git branch -a              # 查看所有分支
 git log --oneline --graph  # 图形化查看提交历史
 ```
+
+## 同步验证（克隆端）
+
+本段由 git clone 得到的副本修改并推送，用于验证本地与远程仓库的双向同步。
