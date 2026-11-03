@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-int main(void)
+int main(int argc, char *argv[])
 {
-    printf("Hello, Operating Systems Lab!\n");
+    const char *name = (argc > 1) ? argv[1] : "Operating Systems Lab";
+    printf("Hello, %s!\n", name);
     printf("This file is used to practise Git version control.\n");
     return 0;
 }
