@@ -1,6 +1,6 @@
-# 操作系统实验一：Git 与 Linux 操作基础
+# 操作系统实验：Git/Linux 基础与 Makefile
 
-本仓库用于《操作系统》实验一 **任务 1（Git 基础与操作）** 与 **任务 2（Linux 操作基础）** 的练习与过程记录。
+本仓库用于《操作系统》实验一（Git 与 Linux 操作基础）和实验二（编译原理基础与文本编辑器）的练习与过程记录。
 
 ## 实验环境
 
@@ -19,9 +19,14 @@ os-lab/
 ├── hello.c              # 示例 C 程序
 ├── test.sh              # 第一个 Shell 脚本
 ├── .gitignore           # 忽略规则
-└── docs/
-    ├── lab1-git.md      # 任务 1 步骤记录
-    └── lab1-linux.md    # 任务 2 步骤记录
+├── docs/
+│   ├── lab1-git.md      # 任务 1 步骤记录
+│   ├── lab1-linux.md    # 任务 2 步骤记录
+│   └── lab2-makefile.md # 实验二步骤记录
+└── lab2/
+    └── my_project/      # Makefile 示例工程
+        ├── Makefile
+        └── src/
 ```
 
 ## 任务 1 完成情况
@@ -43,6 +48,18 @@ os-lab/
 - [x] 编写奇偶数判别 Shell 脚本
 
 详见 [docs/lab1-linux.md](docs/lab1-linux.md)。
+
+## 实验二完成情况（Makefile 与文本编辑器）
+
+- [x] 创建 `my_project` 工程结构（`src/main.c`、`utils.c`、`utils.h`）
+- [x] 编写 Makefile（变量、目标、依赖、TAB 缩进命令、`$@`/`$^`/`$<` 自动变量）
+- [x] `make` 编译并运行，输出 `Hello, World!` 与 `Welcome, Student!`
+- [x] 用 vim 修改 `utils.c` 后 `make`，验证只重编改动文件
+- [x] 新增 `extra.c`/`extra.h` 并加入 Makefile 的 `SRCS`，重新编译运行
+- [x] 验证预处理、编译、汇编、链接四个阶段
+- [x] `make clean` 清理目标文件与可执行文件
+
+详见 [docs/lab2-makefile.md](docs/lab2-makefile.md)，工程见 `lab2/my_project`。
 
 ## 常用命令
 

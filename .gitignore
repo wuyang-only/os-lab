@@ -3,6 +3,8 @@
 *.obj
 *.exe
 a.out
+my_program
+lab2/my_project/my_program
 
 # 编辑器与系统文件
 .vscode/
