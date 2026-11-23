@@ -1,6 +1,6 @@
-# 操作系统实验：Git/Linux 基础与 Makefile
+# 操作系统实验：Git/Linux 基础、Makefile 与进程管理
 
-本仓库用于《操作系统》实验一（Git 与 Linux 操作基础）和实验二（编译原理基础与文本编辑器）的练习与过程记录。
+本仓库用于《操作系统》实验一（Git 与 Linux 操作基础）、实验二（编译原理基础与文本编辑器）和实验三（进程管理与进程同步）的练习与过程记录。
 
 ## 实验环境
 
@@ -22,11 +22,21 @@ os-lab/
 ├── docs/
 │   ├── lab1-git.md      # 任务 1 步骤记录
 │   ├── lab1-linux.md    # 任务 2 步骤记录
-│   └── lab2-makefile.md # 实验二步骤记录
-└── lab2/
-    └── my_project/      # Makefile 示例工程
-        ├── Makefile
-        └── src/
+│   ├── lab2-makefile.md # 实验二步骤记录
+│   └── lab3-process.md  # 实验三步骤记录
+├── lab2/
+│   └── my_project/      # Makefile 示例工程
+│       ├── Makefile
+│       └── src/
+└── lab3/                # 进程管理与同步示例
+    ├── Makefile
+    ├── task1_process/
+    ├── task2_socket/
+    ├── task3_thread/
+    ├── task4_sched/
+    ├── task5_semaphore/
+    ├── task6_monitor/
+    └── task7_dining/
 ```
 
 ## 任务 1 完成情况
@@ -60,6 +70,18 @@ os-lab/
 - [x] `make clean` 清理目标文件与可执行文件
 
 详见 [docs/lab2-makefile.md](docs/lab2-makefile.md)，工程见 `lab2/my_project`。
+
+## 实验三完成情况（进程管理与进程同步）
+
+- [x] 任务 1：`fork()` 创建子进程，父子进程输出各自 PID
+- [x] 任务 2：TCP Socket 服务器/客户端通信（8080 端口）
+- [x] 任务 3：`pthread_create()` 创建多个线程
+- [x] 任务 4：FCFS 与时间片轮转（RR）CPU 调度模拟
+- [x] 任务 5：信号量解决生产者-消费者问题
+- [x] 任务 6：互斥锁 + 条件变量模拟管程解决生产者-消费者问题
+- [x] 任务 7：哲学家就餐问题，通过改变加锁顺序避免死锁
+
+详见 [docs/lab3-process.md](docs/lab3-process.md)，代码见 `lab3/`（进入目录执行 `make`）。
 
 ## 常用命令
 

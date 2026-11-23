@@ -6,6 +6,17 @@ a.out
 my_program
 lab2/my_project/my_program
 
+# 实验三 可执行文件与日志
+lab3/task1_process/create_process
+lab3/task2_socket/server
+lab3/task2_socket/client
+lab3/task2_socket/*.log
+lab3/task3_thread/create_thread
+lab3/task4_sched/cpu_scheduling
+lab3/task5_semaphore/producer_consumer_semaphore
+lab3/task6_monitor/producer_consumer_monitor
+lab3/task7_dining/dining_philosophers
+
 # 编辑器与系统文件
 .vscode/
 .idea/
